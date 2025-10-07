@@ -4,32 +4,33 @@
     padding: 0;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+
 .nav {
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
     align-items: center;
     border: 1px solid #ccc;
-    margin: 20px;
     border-left: none;
     border-right: none;
+    margin: 20px;
+    padding: 10px 0;
 }
+
 .nav-logo {
     width: 70px;
-    margin-top: 10px;
-    margin-bottom: 10px;
 }
+
 .nav-links {
     display: flex;
-    justify-content: center;
-    align-items: center;
     gap: 50px;
 }
+
 .nav-links a {
     text-decoration: none;
     color: black;
     position: relative;
 }
+
 .nav-links a::after {
     content: "";
     position: absolute;
@@ -44,26 +45,158 @@
 .nav-links a:hover::after {
     width: 100%;
 }
-.nav-profile img{
+
+.nav-profile {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.nav-profile img {
     width: 35px;
-    position: relative;
 }
-.profile-text {
-    position: relative;
-    top: -10px;
-}
+
 .star {
     color: orange;
 }
-.hero {
-    height: 86vh;
+
+#hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+    padding: 0 5rem;
 }
-h1 {
+
+.hero-left {
+    flex: 1;
+    text-align: right;
+    padding-right: 5rem;
+}
+
+.hero-left h1 {
     font-size: 150px;
+    line-height: 1;
+}
+
+.hero-left p {
+    margin-top: 20px;
+    font-size: 1rem;
+    color: black;
+    max-width: 550px;
     justify-content: right;
 }
 
-.about {
+.socials {
+    display: flex;
+    gap: 10px;
+    margin-top: 1rem;
+}
+
+.socials a {
+    text-decoration: none;
+    color: black;
+    border: 1px solid black;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.9rem;
+    margin-right: -16px;
+}
+
+.stats {
+    display: flex;
+    gap: 5rem;
+    margin-top: 4rem;
+}
+
+.stat h3 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin: 0;
+}
+
+.stat p {
+    margin-top: 0.5rem;
+    font-size: 1rem;
+    color: black;
+}
+
+.hero-right {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.image-wrapper {
+    position: relative;
+    background: #f8a726;
+    border-radius: 3rem;
+    width: 530px;
+    height: 612px;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    right: 30px;
+}
+
+
+.camera-man {
+    position: absolute;
+    width: 80%;
+    height: auto;
+    top: -36px;
+}
+
+.signing-text {
+    position: absolute;
+    top: 20px;
+    right: 300px;
+    width: 150px;
+}
+.mini-gallery-right{
+    position: absolute;
+    top: -1px;
+    right: 5px;
+    display: flex;
+}
+.mini-gallery-left {
+    position: absolute;
+    bottom: -3px;
+    left: -5px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.mini-gallery img {
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    border: 3px solid white;
+    object-fit: cover;
+}
+
+#about {
     height: 100vh;
-    background-color: black;
+    background: black;
+}
+.about-text h3 {
+    color: #faf7f4;
+    font-size: 100px;
+    font-weight: 700;
+    position: relative;
+    top: -150px;
+
+}
+.about-text span {
+    content: ".";
+    font-size: 220px;
+    font-family: "";
+    padding: 0 30px 0 20px;
 }
